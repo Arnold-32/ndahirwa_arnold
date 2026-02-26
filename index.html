@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Your Name</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="logo">Your Name</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <!-- profile picture (save your image as profile.jpg in the project root) -->
+        <img src="profile.jpg" alt="Profile photo" class="profile" />
+        <h1>Hi, I'm Your Name</h1>
+        <p>Frontend developer building simple, useful web apps.</p>
+        <a class="cta" href="#projects">See my work</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2>About</h2>
+        <p>Short bio. Mention skills, focus, and what you're looking for.</p>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <img src="https://via.placeholder.com/640x360?text=Project+1" alt="Project 1 screenshot" />
+            <h3>Project One</h3>
+            <p>Short description of project one.</p>
+            <p class="links"><a href="#">Live</a> · <a href="#">Repo</a></p>
+          </article>
+
+          <article class="card">
+            <img src="https://via.placeholder.com/640x360?text=Project+2" alt="Project 2 screenshot" />
+            <h3>Project Two</h3>
+            <p>Short description of project two.</p>
+            <p class="links"><a href="#">Live</a> · <a href="#">Repo</a></p>
+          </article>
+
+          <article class="card">
+            <img src="https://via.placeholder.com/640x360?text=Project+3" alt="Project 3 screenshot" />
+            <h3>Project Three</h3>
+            <p>Short description of project three.</p>
+            <p class="links"><a href="#">Live</a> · <a href="#">Repo</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you want to work together, send a message.</p>
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Your Name — Built with HTML/CSS/JS</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
